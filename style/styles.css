@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.cube{
+	display: flex;
+	justify-content: space-around;
+}
+
+.cube *{
+	margin-top: 10px;
+}
+
+.green_cube{
+	height: 150px;
+	width: 150px;
+	background: green;
+}
+
+.yellow_cube{
+	height: 150px;
+	width: 150px;
+	background: yellow;
+}
+
+.purple_cube{
+	height: 150px;
+	width: 150px;
+	background: purple;
+}
+
+@media (max-width: 1024px) {
+	.cube{
+		flex-direction: column;
+		align-items: center; 
+	}
+}
+
+@media (max-width: 768px){
+	.cube *{
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+	.cube{
+		flex-direction: row;
+	}
+
+	.cube *{
+		width: 100px;
+		height: 100px;
+	}
+}
